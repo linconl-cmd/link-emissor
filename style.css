@@ -1,24 +1,30 @@
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
+body {
+    font-family: Arial, sans-serif;
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center;
+    height: 100vh; /* Preenche toda a altura da tela */
+    margin: 0; /* Remove margens padrões */
+}
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+ img {
+     max-width: 100%;
+     height: auto;
+     margin-bottom: 20px; /* Espaço entre o GIF e o botão */
+    }
 
-        button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+button {
+     background-color: #007bff;
+     color: white;
+     padding: 10px 20px;
+    font-size: 16px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+    }
 
-        button:hover {
-            background-color: #0056b3;
-        }
+button:hover {
+      background-color: #0056b3;
+    }
