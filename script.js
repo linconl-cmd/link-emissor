@@ -4,8 +4,8 @@ const contactModal = document.getElementById('contact-modal');
 const closeModal = document.getElementById('close-modal');
 const downloadButton = document.getElementById('download-btn');
 
-//  validações para o link whatsapp 
 
+//  validações para o link do WhatsApp
 const userAgent = navigator.userAgent.toLowerCase();
 const isMobile = /iphone|ipad|android/.test(userAgent);
 
@@ -13,15 +13,16 @@ const phoneNumber = "5573991430073";
 const message = "Olá, vim pela página de emissão e quero comprar um certificado digital.";
 const encodedMessage = encodeURIComponent(message);
 
-// verifica se é celular ou desktop e enviar o respctivo link para o dispositivo certo 
-
+// Verifica se é celular ou desktop e envia o respectivo link para o dispositivo certo
 const link = isMobile
-? `https://wa.me/${phoneNumber}?text=${encodedMessage}`
-: `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+    ? `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+    : `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
 
-document.getElementById("whatsapp-link").href = link;
-
-
+// Atualiza o link do WhatsApp
+const whatsappLink = document.getElementById("whatsapp-link");
+if (whatsappLink) {
+    whatsappLink.href = link;
+}
 
 // Link para o arquivo
 const fileUrl = 'https://drive.google.com/uc?export=download&id=1Up4tnVr90qpsD-Eo9_sEI-XEA4tUkHrQ'; // Ajuste o ID conforme necessário
