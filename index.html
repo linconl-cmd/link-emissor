@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Emissor Download</title>
-</head>    
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-   <!-- Header -->
-   <header>
-    <h1>Digital Solutions</h1>
-    <nav>
-        <a href="#tutorial">Tutorial</a>
-        <a href="https://drive.google.com/uc?export=download&id=1Up4tnVr90qpsD-Eo9_sEI-XEA4tUkHrQ">Baixar</a>
-        <a href="#contato">Contato</a>
-    </nav>
-</header>
+    <!-- Header -->
+    <header>
+        <h1>Plataforma de Emissão</h1>
+        <nav>
+            <a href="#tutorial">Tutorial</a>
+            <a href="https://drive.google.com/uc?export=download&id=1Up4tnVr90qpsD-Eo9_sEI-XEA4tUkHrQ">Baixar</a>
+            <a id="contact-link" href="javascript:void(0)">Contato</a>
+        </nav>
+    </header>
 
-<!-- Conteúdo principal -->
-<main>
-    <h2 id="tutorial">Siga o tutorial para fazer a emissão correta</h2>
-    <img src="tutorial2.gif" alt="Tutorial de como emitir o certificado">
-    <button id="download-btn">Baixar Emissor</button>
-</main>
+    <!-- Conteúdo principal -->
+    <main>
+        <h2 id="tutorial">Siga o tutorial para fazer a emissão correta</h2>
+        <img src="tutorial2.gif" alt="Tutorial de como emitir o certificado">
+        <button id="download-btn">Baixar Emissor</button>
+    </main>
 
-<!-- Footer -->
+    <!-- Modal (Pop-Up) -->
+    <div class="modal" id="contact-modal">
+        <div class="modal-content">
+            <h2>Fale Conosco</h2>
+            <p>Envie um e-mail para <a href="mailto:suporte@plataforma.com">linconlagr@gmail.com</a></p>
+            <p>Ou fale pelo WhatsApp: 
+                <a class="link-wpp" href="https://wa.me/5573991430073/?text=Olá,vim pela página de emissão e quero comprar um certificado digital." target="_blank" style="color: var(--accent-color);">
+                    (73) 99143-0073
+                </a>
+            </p> 
+            <button class="close-btn" id="close-modal">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
 <footer>
     <p>&copy; 2024 Digital Solutions. Todos os direitos reservados.</p>
     <p>
@@ -32,9 +46,7 @@
         <a href="#politica">Política de Privacidade</a>
     </p>
 </footer>
-
     <!-- Script carregado no final -->
     <script src="script.js"></script>
-
 </body>
 </html>
